@@ -2,7 +2,7 @@ var Message = Backbone.Model.extend({});
 
 var MessageStore = Backbone.Collection.extend({
  model: Message,
-   url: 'http://sultry-spire-6184.herokuapp.com/messages'
+   url: 'http://damp-beyond-3252.herokuapp.com/messages'
 });
 
 var messages = new MessageStore;
