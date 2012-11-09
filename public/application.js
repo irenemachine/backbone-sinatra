@@ -2,7 +2,7 @@ var Message = Backbone.Model.extend({});
 
 var MessageStore = Backbone.Collection.extend({
  model: Message,
-   url: 'http://sultry-spire-6184.herokuapp.com/'
+   url: 'http://sultry-spire-6184.herokuapp.com/messages'
 });
 
 var messages = new MessageStore;
@@ -35,4 +35,4 @@ var view = new MessageView({el: $('#chatArea')});
 
 setInterval(function(){
   messages.fetch({success: function(){view.render();}});
-},100000000000000000000000000)
+},1000)
